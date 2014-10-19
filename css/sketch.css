@@ -1,3 +1,25 @@
+/*
+******************************************************************************
+***                                                                        ***
+***  Name:                                                                 ***
+***  sketch.css                                                            ***
+***                                                                        ***
+***  Authors:                                                              ***
+***    Rafał Derlatka <r.derlatka@gmail.com>, rav88 @ github               ***
+***    Przemysław Olszewski <p.olszewski@aleatex.com>, day01 @ github      ***
+***                                                                        ***
+***  License:                                                              ***
+***    Apache License 2.0                                                  ***
+***                                                                        ***
+***  Version:                                                              ***
+***    1.0.0.0                                                             ***
+***                                                                        ***
+***  Description:                                                          ***
+***    Main layout css instructions for the project.                       ***
+***                                                                        ***
+******************************************************************************
+*/
+
 html, body {
 	font-family: 'Neucha', cursive;
 }
@@ -6,12 +28,35 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Neucha', cursive;
 }
 
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
 hr
 {
     display:block;
     border:none;
     height:3px;
-    background-image:url('Images/hr.png');
+    background-image:url(../images/hr.png);
+}
+
+.navbar-brand {
+	height: 15px;
+	padding: 4px;
 }
 
 .navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
@@ -20,10 +65,10 @@ hr
 .row, .btn, nav, .navbar-inverse {
 	border-style: solid;
 	border-width: 13px 16px 14px 7px;
-	-moz-border-image: url(Images/scratch_line.png) 10 11 9 6 repeat;
-	-webkit-border-image: url(Images/scratch_line.png) 10 11 9 6 repeat;
-	-o-border-image: url(Images/scratch_line.png) 10 11 9 6 repeat;
-	border-image: url(Images/scratch_line.png) 10 11 9 6 fill repeat;
+	-moz-border-image: url(../images/scratch_line.png) 10 11 9 6 repeat;
+	-webkit-border-image: url(../images/scratch_line.png) 10 11 9 6 repeat;
+	-o-border-image: url(../images/scratch_line.png) 10 11 9 6 repeat;
+	border-image: url(../images/scratch_line.png) 10 11 9 6 fill repeat;
 }
 
 .btn-primary {
@@ -46,4 +91,9 @@ hr
 .navbar {
 	padding: 0 !important;
 	margin: 0 !important;
+}
+
+.nav.navbar-nav a:hover {
+	color: #000 !important;
+	font-weight: bold;
 }
