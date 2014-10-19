@@ -1,0 +1,49 @@
+html, body {
+	font-family: 'Neucha', cursive;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Neucha', cursive;
+}
+
+hr
+{
+    display:block;
+    border:none;
+    height:3px;
+    background-image:url('Images/hr.png');
+}
+
+.navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
+.navbar, .navbar-inverse, navbar-fixed-top, navbar-brand {min-height:32px !important}
+
+.row, .btn, nav, .navbar-inverse {
+	border-style: solid;
+	border-width: 13px 16px 14px 7px;
+	-moz-border-image: url(Images/scratch_line.png) 10 11 9 6 repeat;
+	-webkit-border-image: url(Images/scratch_line.png) 10 11 9 6 repeat;
+	-o-border-image: url(Images/scratch_line.png) 10 11 9 6 repeat;
+	border-image: url(Images/scratch_line.png) 10 11 9 6 fill repeat;
+}
+
+.btn-primary {
+	background: #E0E0E0 !important;
+	color: #666 !important;
+	border-image-outset: 4px;
+	border-radius: 0 !important;
+}
+
+.btn-primary a:link, .btn-primary a:hover, .btn-primary a {
+	color: #222 !important;
+}
+
+.navbar-inverse {
+	background: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.navbar {
+	padding: 0 !important;
+	margin: 0 !important;
+}
